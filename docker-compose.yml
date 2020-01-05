@@ -243,6 +243,7 @@ services:
         - docker-in-docker
 
 ### PHP Worker ############################################
+    
     php-worker:
       build:
         context: ./php-worker
