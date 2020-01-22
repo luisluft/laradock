@@ -14,7 +14,7 @@ APP_CODE_PATH_CONTAINER=/var/www
 APP_CODE_CONTAINER_FLAG=:cached
 
 # Choose storage path on your machine. For all storage systems
-DATA_PATH_HOST=~/.laradock/data
+DATA_PATH_HOST=~/.laradock/data/PROJECT-NAME
 
 ### Drivers ################################################
 
@@ -33,7 +33,7 @@ COMPOSE_FILE=docker-compose.yml
 COMPOSE_PATH_SEPARATOR=:
 
 # Define the prefix of container names. This is useful if you have multiple projects that use laradock to have seperate containers per project.
-COMPOSE_PROJECT_NAME=laradock
+COMPOSE_PROJECT_NAME=PROJECT-NAME
 
 ### PHP Version ###########################################
 
@@ -269,7 +269,7 @@ APACHE_DOCUMENT_ROOT=/var/www/public
 ### MYSQL #################################################
 
 MYSQL_VERSION=latest
-MYSQL_DATABASE=default
+MYSQL_DATABASE=PROJECT-NAME
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
 MYSQL_PORT=3306
